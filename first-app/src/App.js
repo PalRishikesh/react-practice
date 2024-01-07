@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react";
 import MovieCard from "./MovieCard";
 import "./App.css";
+import Tea from "./tea";
+
 import searchIcom from "./search.svg";
 const API_URL = "http://www.omdbapi.com?apikey=e6c63c**";
-
 const App = () => {
  
 
@@ -22,7 +23,9 @@ const App = () => {
   });
   return (
     <div className="app">
-      <h1>Movie Reel</h1>
+      <h1>Movie Reel </h1>
+      <Tea/>
+
       <div className="search">
         <input placeholder="Search for movies" value={searchTerm} 
         onChange={(e)=>{
