@@ -8,7 +8,7 @@ const API_URL = "http://www.omdbapi.com?apikey=e6c63c**";
 const App = () => {
  
 
-  const [movies, setMovies] = useState([]);
+  const [movies, setMovies] = useState(['abc','dbc']);
   const [searchTerm, setSearchTerm] = useState('');
 
   const searchMovies = async (title) => {
@@ -42,7 +42,7 @@ const App = () => {
                 <div className="container">
                     {
                         movies.map((movie)=>(
-                            <MovieCard movie={movie}/>
+                            <div>{movie}</div>
                         ))
                     }
                 </div>
