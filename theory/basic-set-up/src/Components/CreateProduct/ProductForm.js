@@ -64,7 +64,12 @@ const ProductForm = (props) => {
         setPDescription('')
         setPImageUrl('')
         props.createProductAttribute(product)
+        props.hideFormAttribute()
 
+
+    }
+    function hideFormBtn(){
+        props.hideFormAttribute()
     }
 
     return (
@@ -118,6 +123,7 @@ const ProductForm = (props) => {
                 />
             </div>
             <button type="submit" className="btn btn-primary">Add Product</button>
+            <button type='button' onClick={hideFormBtn}> Cancel </button>
         </form>
     )
 }

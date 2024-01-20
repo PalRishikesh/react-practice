@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import CreateProduct from "./Components/CreateProduct/CreateProduct";
 import ProductList from "./Components/ProductList/ProductList";
 import "./app.css"
@@ -10,7 +10,8 @@ const products = [
         desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit fuga autem maiores necessitatibus.',
         isAvailable: true,
         image: 'images/fresh-milk.png',
-        price: 12
+        price: 12,
+        stock:5
     },
     {
         pID: 2,
@@ -18,7 +19,8 @@ const products = [
         desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit fuga autem maiores necessitatibus.',
         isAvailable: false,
         image: "images/cottage-cheese.png",
-        price: 10
+        price: 10,
+        stock:9
     }
 ];
 
@@ -45,6 +47,23 @@ function App() {
     function onSelectedValueChangeFn(filterValue){
         setFilterTextValue(filterValue);
     }
+
+    useEffect(()=>{
+        let timeOutValue = setTimeout(()=>{
+            console.log("Validateing from input");
+            // Basically setting form is valid or not in the setFormInvalid state
+            setFormInvalid(
+                enteredEmail.include('@') && enteredPassword.trim() > 6
+            )
+        },500);
+        // Above function is execute after user stop for 500 milisecond
+        // This will not run for first time in useEffect run every time to clean setTimout 
+        // function so that use have only one setTimeout at given time
+        return ()=>{
+            console.log("Clean up function executed");
+            clearTimeout(timeOutValue);
+        }
+    },[enteredEmail,enteredPassword])
 
     return (
         <div>

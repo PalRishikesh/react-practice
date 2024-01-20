@@ -14,10 +14,10 @@ function ProductDetails(props) {
     }
     return (
         <>
-            <div className="col-sm-2">
-                <Button btnEventHandler = {deCrementProductCount} children="Minus">-</Button>
+            <div className="col-sm-4">
+                <Button btnEventHandler = {deCrementProductCount} children="Minus" customDisableParnetAttribute={productCount === 0}>-</Button>
                 <span>{productCount}</span>
-                <Button btnEventHandler = {inCrementProductCount} children="Plus"></Button>
+                <Button btnEventHandler = {inCrementProductCount} children="Plus" customDisableParnetAttribute = {productCount === props.stock}></Button>
             </div>
         </>
     );
