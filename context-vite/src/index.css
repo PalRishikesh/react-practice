@@ -1,0 +1,25 @@
+.family {
+    border: 1px solid black;
+    display: inline-block;
+    padding: 2px;
+}
+.parent{
+    border: 5px solid black;
+    display: inline-block;
+    padding: 20px;
+}
+.children{
+    border: 5px solid orangered;
+    display: inline-block;
+    padding: 20px;
+}
+.gson{
+    border: 5px solid blue;
+    display: inline-block;
+    padding: 5px;
+}
+.gdaughter{
+    border: 5px solid pink;
+    display: inline-block;
+    padding: 5px;
+}

@@ -1,4 +1,5 @@
 import { movies } from "../data/movie"
+import MovieAnalytics from "./MovieAnalytics";
 import MovieDetail from "./MovieDetail";
 
 const fetchMoviesData=()=>{
@@ -9,13 +10,9 @@ const Movie = () => {
     return (
         <div className="movie-cntainer">
             <h2>Movies</h2>
-            <ul className="movie-list">
-                {
-                    movieData.map((movie, index)=>(
-                      <MovieDetail key={movie.id} movie={movie} index={index}/>
-                    ))
-                }
-            </ul>
+            <MovieDetail movies={movieData}/>
+            <MovieAnalytics data= {movieData}/>
+            
         </div>
     )
 }
