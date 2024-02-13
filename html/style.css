@@ -1,0 +1,33 @@
+body{
+    background:darkblue;
+}
+.whiteBox{
+    display: inline-block;
+    height: 155px;
+    width: 155px;
+    border: 2px solid black;
+    margin: 10px;
+    background-color: white;
+}
+.imgBox{
+    background-image: url("./pro.jpg");
+    height: 145px;
+    width: 145px;
+    background-size: cover;
+    position: relative;
+    top: 5px;
+    left: 5px;
+    cursor: pointer;
+}
+
+.hold{
+    border: 3px solid aquamarine;
+}
+.hide{
+    display: none;
+}
+
+.dashed{
+    background: pink;
+    border-style: dashed;
+}
