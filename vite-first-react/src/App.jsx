@@ -1,11 +1,15 @@
-import Tea from "./tea"
-function App() {
+// App.js
+import React from 'react';
+import Board from './Board';
+import './App.css';
 
+function App() {
   return (
-    
-      <Tea/>
-    
-  )
+    <div className="App">
+      <h1>Ludo Game</h1>
+      <Board />
+    </div>
+  );
 }
 
-export default App
+export default App;
