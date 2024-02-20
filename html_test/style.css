@@ -1,0 +1,179 @@
+.tile-row {
+  display: flex;
+}
+.tile {
+  border: 1px solid red;
+  display: inline-block;
+  min-width: 35px;
+  min-height: 35px;
+  width: 55px;
+  height: 55px;
+  box-sizing: border-box;
+  text-align: center;
+  position: relative;
+}
+.dice {
+  border: 2px solid wheat;
+  cursor: pointer;
+  padding: 5px;
+  position: absolute;
+  right: 13px;
+  top: 9px;
+  background-color: rgb(228, 15, 15, 0.8);
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  z-index: 9;
+}
+#dice {
+  margin-left: 50px;
+}
+
+.dice-system {
+  border: 1px solid green;
+  cursor: pointer;
+  padding: 5px;
+  position: absolute;
+  right: 1px;
+  top: 5px;
+  background-color: rgba(24, 221, 60, 0.8);
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  z-index: 8;
+}
+.tile-number {
+  position: relative;
+  top: 7px;
+  z-index: -1;
+}
+
+/* dice */
+.dice-rolling {
+  text-align: center;
+  font-size: 67px;
+}
+.dice_1::after {
+  content: "";
+  content: "\2680";
+}
+.dice_2::after {
+  content: "";
+  content: "\2681";
+}
+.dice_3::after {
+  content: "";
+  content: "\2682";
+}
+.dice_4::after {
+  content: "";
+  content: "\2683";
+}
+.dice_5::after {
+  content: "";
+  content: "\2684";
+}
+.dice_6::after {
+  content: "";
+  content: "\2685";
+}
+#boardPointerMessage {
+  font-size: 21px;
+}
+.board-success-message {
+  color: green;
+}
+.board-fail-message {
+  color: red;
+}
+
+/* Ladder CSS start Here */
+.ladder-start {
+  background-image: url(./image/ladder-start.png);
+  background-repeat: no-repeat;
+  z-index: -6;
+  background-size: contain;
+}
+.ladder-end {
+  background-image: url(./image/ladder-end.png);
+  background-repeat: no-repeat;
+  z-index: -6;
+  background-size: contain;
+  background-position-y: 100%;
+}
+.ladder-middle {
+  background-image: url(./image/ladder-middle.png);
+  z-index: -6;
+  background-size: contain;
+}
+.ladder-right-angle {
+  background-image: url(./image/side-angle.png);
+  z-index: -6;
+  background-size: contain;
+  background-position-y: 4px;
+}
+.ladder-right-end {
+  background-image: url(./image/ladder-right-end.png);
+  z-index: -6;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.ladder-left-end {
+  background-image: url(./image/ladder-left-end.png);
+  z-index: -6;
+  background-size: contain;
+  background-position-y: 0px;
+  background-repeat: no-repeat;
+  background-position-x: 98%;
+}
+/* Ladder CSS end  Here */
+
+/* Snake CSS start Here */
+
+.snake-tail {
+  background-image: url(./image/snake-tail.png);
+  background-repeat: no-repeat;
+  z-index: -6;
+  background-size: contain;
+}
+.snake-middle {
+  background-image: url(./image/snake-middle.png);
+  z-index: -6;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.snake-left-anlge {
+  background-image: url(./image/snake-left-angle.png);
+  background-repeat: no-repeat;
+  z-index: -6;
+  background-size: contain;
+  background-position-y: 100%;
+}
+
+.snake-left-end {
+  background-image: url(./image/snake-left-end.png);
+  z-index: -6;
+  background-size: contain;
+  background-position-y: -3px;
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+}
+
+.snake-right-angle {
+  background-image: url(./image/snake-right-angle.png);
+  background-repeat: no-repeat;
+  z-index: -6;
+  background-size: cover;
+  background-position-x: 1px;
+  background-position-y: 2px;
+}
+
+.snake-right-end {
+  background-image: url(./image/snake-right-end.png);
+  z-index: -6;
+  background-size: contain;
+  background-position-y: 5px;
+  background-repeat: no-repeat;
+}
+/* Snake CSS end  Here */

@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drag</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="tile-row">
+      <div class="tile" data-id="100">
+        <span class="tile-number">100</span>
+      </div>
+      <div class="tile" data-id="99">
+        <span class="tile-number">99</span>
+      </div>
+      <div class="tile ladder-left-end" data-id="98">
+        <span class="tile-number">98</span>
+      </div>
+      <div class="tile ladder-right-end" data-id="97">
+        <span class="tile-number">97</span>
+      </div>
+      <div class="tile snake-left-end" data-id="96">
+        <span class="tile-number">96</span>
+      </div>
+      <div class="tile snake-left-anlge" data-id="95">
+        <span class="tile-number">95</span>
+      </div>
+      <div class="tile" data-id="94">
+        <span class="tile-number">94</span>
+      </div>
+      <div class="tile" data-id="93">
+        <span class="tile-number">93</span>
+      </div>
+      <div class="tile" data-id="92">
+        <span class="tile-number">92</span>
+      </div>
+      <div class="tile" data-id="91">
+        <span class="tile-number">91</span>
+      </div>
+    </div>
+    <div class="tile-row">
+      <div class="tile" data-id="81">
+        <span class="tile-number">81</span>
+      </div>
+      <div class="tile" data-id="82">
+        <span class="tile-number">82</span>
+      </div>
+      <div class="tile" data-id="83">
+        <span class="tile-number">83</span>
+      </div>
+      <div class="tile ladder-middle" data-id="84">
+        <span class="tile-number">84</span>
+      </div>
+      <div class="tile" data-id="85">
+        <span class="tile-number">85</span>
+      </div>
+      <div class="tile snake-middle" data-id="86">
+        <span class="tile-number">86</span>
+      </div>
+      <div class="tile" data-id="87">
+        <span class="tile-number">87</span>
+      </div>
+      <div class="tile" data-id="88">
+        <span class="tile-number">88</span>
+      </div>
+      <div class="tile" data-id="89">
+        <span class="tile-number">89</span>
+      </div>
+      <div class="tile" data-id="90">
+        <span class="tile-number">90</span>
+      </div>
+    </div>
+    <div class="tile-row">
+      <div class="tile" data-id="80">
+        <span class="tile-number">80</span>
+      </div>
+      <div class="tile" data-id="79">
+        <span class="tile-number">79</span>
+      </div>
+      <div class="tile" data-id="78">
+        <span class="tile-number">78</span>
+      </div>
+      <div class="tile ladder-middle" data-id="77">
+        <span class="tile-number">77</span>
+      </div>
+      <div class="tile" data-id="76">
+        <span class="tile-number">76</span>
+      </div>
+      <div class="tile snake-tail" data-id="75">
+        <span class="tile-number">75</span>
+      </div>
+      <div class="tile" data-id="74">
+        <span class="tile-number">74</span>
+      </div>
+      <div class="tile" data-id="73">
+        <span class="tile-number">73</span>
+      </div>
+      <div class="tile ladder-left-end" data-id="72">
+        <span class="tile-number">72</span>
+      </div>
+      <div class="tile ladder-right-end" data-id="71">
+        <span class="tile-number">71</span>
+      </div>
+    </div>
+    <div class="tile-row">
+      <div class="tile snake-right-angle" data-id="61">
+        <span class="tile-number">61</span>
+      </div>
+      <div class="tile snake-right-end" data-id="62">
+        <span class="tile-number">62</span>
+      </div>
+      <div class="tile" data-id="63">
+        <span class="tile-number">63</span>
+      </div>
+      <div class="tile ladder-middle" data-id="64">
+        <span class="tile-number">64</span>
+      </div>
+      <div class="tile" data-id="65">
+        <span class="tile-number">65</span>
+      </div>
+      <div class="tile" data-id="66">
+        <span class="tile-number">66</span>
+      </div>
+      <div class="tile" data-id="67">
+        <span class="tile-number">67</span>
+      </div>
+      <div class="tile" data-id="68">
+        <span class="tile-number">68</span>
+      </div>
+      <div class="tile ladder-middle" data-id="69">
+        <span class="tile-number">69</span>
+      </div>
+      <div class="tile" data-id="70">
+        <span class="tile-number">70</span>
+      </div>
+    </div>
+    <div class="tile-row">
+      <div class="tile snake-middle" data-id="60">
+        <span class="tile-number">60</span>
+      </div>
+      <div class="tile" data-id="59">
+        <span class="tile-number">59</span>
+      </div>
+      <div class="tile" data-id="58">
+        <span class="tile-number">58</span>
+      </div>
+      <div class="tile ladder-start" data-id="57">
+        <span class="tile-number">57</span>
+      </div>
+      <div class="tile" data-id="56">
+        <span class="tile-number">56</span>
+      </div>
+      <div class="tile" data-id="55">
+        <span class="tile-number">55</span>
+      </div>
+      <div class="tile" data-id="54">
+        <span class="tile-number">54</span>
+      </div>
+      <div class="tile" data-id="53">
+        <span class="tile-number">53</span>
+      </div>
+      <div class="tile ladder-start" data-id="52">
+        <span class="tile-number">52</span>
+      </div>
+      <div class="tile" data-id="51">
+        <span class="tile-number">51</span>
+      </div>
+    </div>
+    <div class="tile-row">
+      <div class="tile snake-middle" data-id="41">
+        <span class="tile-number">41</span>
+      </div>
+      <div class="tile  ladder-left-end" data-id="42">
+        <span class="tile-number">42</span>
+      </div>
+      <div class="tile ladder-right-end" data-id="43">
+        <span class="tile-number">43</span>
+      </div>
+      <div class="tile" data-id="44">
+        <span class="tile-number">44</span>
+      </div>
+      <div class="tile" data-id="45">
+        <span class="tile-number">45</span>
+      </div>
+      <div class="tile ladder-end" data-id="46">
+        <span class="tile-number">46</span>
+      </div>
+      <div class="tile" data-id="47">
+        <span class="tile-number">47</span>
+      </div>
+      <div class="tile snake-left-end" data-id="48">
+        <span class="tile-number">48</span>
+      </div>
+      <div class="tile snake-left-anlge" data-id="49">
+        <span class="tile-number">49</span>
+      </div>
+      <div class="tile" data-id="50">
+        <span class="tile-number">50</span>
+      </div>
+    </div>
+    <div class="tile-row">
+      <div class="tile snake-tail" data-id="40">
+        <span class="tile-number">40</span>
+      </div>
+      <div class="tile ladder-middle" data-id="39">
+        <span class="tile-number">39</span>
+      </div>
+      <div class="tile" data-id="38">
+        <span class="tile-number">38</span>
+      </div>
+      <div class="tile" data-id="37">
+        <span class="tile-number">37</span>
+      </div>
+      <div class="tile" data-id="36">
+        <span class="tile-number">36</span>
+      </div>
+      <div class="tile  ladder-middle" data-id="35">
+        <span class="tile-number">35</span>
+      </div>
+      <div class="tile" data-id="34">
+        <span class="tile-number">34</span>
+      </div>
+      <div class="tile" data-id="33">
+        <span class="tile-number">33</span>
+      </div>
+      <div class="tile snake-middle" data-id="32">
+        <span class="tile-number">32</span>
+      </div>
+      <div class="tile" data-id="31">
+        <span class="tile-number">31</span>
+      </div>
+    </div>
+    <div class="tile-row">
+      <div class="tile" data-id="21">
+        <span class="tile-number">21</span>
+      </div>
+      <div class="tile ladder-middle" data-id="22">
+        <span class="tile-number">22</span>
+      </div>
+      <div class="tile" data-id="23">
+        <span class="tile-number">23</span>
+      </div>
+      <div class="tile" data-id="24">
+        <span class="tile-number">24</span>
+      </div>
+      <div class="tile" data-id="25">
+        <span class="tile-number">25</span>
+      </div>
+      <div class="tile ladder-middle" data-id="26">
+        <span class="tile-number">26</span>
+      </div>
+      <div class="tile" data-id="27">
+        <span class="tile-number">27</span>
+      </div>
+      <div class="tile" data-id="28">
+        <span class="tile-number">28</span>
+      </div>
+      <div class="tile snake-middle" data-id="29">
+        <span class="tile-number">29</span>
+      </div>
+      <div class="tile" data-id="30">
+        <span class="tile-number">30</span>
+      </div>
+    </div>
+    <div class="tile-row">
+      <div class="tile" data-id="20">
+        <span class="tile-number">20</span>
+      </div>
+      <div class="tile ladder-start" data-id="19">
+        <span class="tile-number">19</span>
+      </div>
+      <div class="tile" data-id="18">
+        <span class="tile-number">18</span>
+      </div>
+      <div class="tile" data-id="17">
+        <span class="tile-number">17</span>
+      </div>
+      <div class="tile" data-id="16">
+        <span class="tile-number">16</span>
+      </div>
+      <div class="tile ladder-middle" data-id="15">
+        <span class="tile-number">15</span>
+      </div>
+      <div class="tile" data-id="14">
+        <span class="tile-number">14</span>
+      </div>
+      <div class="tile" data-id="13">
+        <span class="tile-number">13</span>
+      </div>
+      <div class="tile snake-middle" data-id="12">
+        <span class="tile-number">12</span>
+      </div>
+      <div class="tile" data-id="11">
+        <span class="tile-number">11</span>
+      </div>
+    </div>
+    <div class="tile-row">
+      <div class="tile" data-id="1">
+        <span class="tile-number">1</span>
+        <span class="dice"></span>
+        <span class="dice-system"></span>
+      </div>
+      <div class="tile" data-id="2">
+        <span class="tile-number">2</span>
+      </div>
+      <div class="tile" data-id="3">
+        <span class="tile-number">3</span>
+      </div>
+      <div class="tile" data-id="4">
+        <span class="tile-number">4</span>
+      </div>
+      <div class="tile" data-id="5">
+        <span class="tile-number">5</span>
+      </div>
+      <div class="tile ladder-start" data-id="6">
+        <span class="tile-number">6</span>
+      </div>
+      <div class="tile" data-id="7">
+        <span class="tile-number">7</span>
+      </div>
+      <div class="tile" data-id="8" >
+        <span class="tile-number">8</span>
+      </div>
+      <div class="tile snake-tail" data-id="9">
+        <span class="tile-number">9</span>
+      </div>
+      <div class="tile" data-id="10">
+        <span class="tile-number">10</span>
+      </div>
+    </div>
+
+    <button id="dice" onclick="rollDice('dice')">Roll Dice</button> <span id="diceValue"></span>
+    <button id="systemDice" onclick="rollDiceSystem('systemDice')">System Roll Dice</button><span id="systeDiceValue"></span>
+    <div>
+      <div>User Won <span id="userWonCount">0</span></div>
+      <div>System Won <span id="systemWonCount">0</span></div>
+    </div>
+    <div class="dice-rolling">
+        <span class="dice_1"></span>
+        
+    </div>
+    <div id="boardPointerMessage"></div>
+  </body>
+  <script src="index.js"></script>
+</html>
