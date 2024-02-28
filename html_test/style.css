@@ -77,9 +77,13 @@
   content: "";
   content: "\2685";
 }
+
+
+
 #boardPointerMessage {
   font-size: 21px;
 }
+
 .board-success-message {
   color: green;
 }
