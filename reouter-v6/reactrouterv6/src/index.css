@@ -1,0 +1,19 @@
+
+.navbar-side{
+  display: inline-block;
+  padding: 10px;
+}
+.sidebar-com{
+  display: inline-block;
+  padding: 10px;
+  text-decoration: none;
+}
+
+/* .sidebar-com.active{
+  background-color:black;
+  color: whitesmoke;
+} */
+ 
+.sidebar-com:hover{
+  color: aqua;
+}
