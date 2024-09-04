@@ -16,8 +16,8 @@ function App() {
   }
 
   return (
-    <>``
-      <h2>Rishikesh Pal</h2>
+    <>
+      <h2>Rishikesh Pal</h2>  
       {/* HashRouter is use after domain#login istead of '/' */}
       <BrowserRouter>
         {/* <Link to="/">Home</Link>
